@@ -1,0 +1,46 @@
+.app{
+    display: grid;
+    border: 2px solid rgb(38, 219, 219);
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:50px repeat(5,30px);
+    grid-template-areas: "result result result result"
+                         "9 8 7  clear"
+                         "6 5 4  clear"
+                         "3 2 1  clear"
+                         "zero dot plus minus"
+                         "equal equal product div";
+}
+
+h3{
+    grid-area: result;
+    border: 1px solid rgb(8, 8, 8);
+    text-align: right;
+    margin: 7px 4px 7px 4px;
+  
+    align-items: center;
+    /* background-color: RED; */
+}
+
+#equal{
+grid-area: equal;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+button{
+    background-color:rgb(38, 14, 255);
+     border: 1px solid rgb(245, 242, 242); 
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    color: cyan;   
+}
+
+button:hover{
+    border-color: rgb(182, 82, 15);
+}
